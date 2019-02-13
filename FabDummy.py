@@ -36,6 +36,7 @@ def dummy_ensemble(config="dummy_test",**args):
     """
     
     path_to_config = find_config_file_path(config)
+    print("local config file path at: %s" % path_to_config)
     sweep_dir = path_to_config + "/SWEEP"
     env.script = 'dummy'
     env.input_name_in_config = 'dummy.txt'
