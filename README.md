@@ -50,3 +50,7 @@ Simply type `fabsim localhost install_plugin:FabDummy` anywhere inside your FabS
 3. Use `fabsim <machine> job_stat` to track the submission status of your jobs, or `fabsim <machine> monitor` to poll periodically for the job status.
 4. If the stat or monitor commands do not show any jobs being listed, then all your job has finished (successfully or unsuccessfully).
 5. You can then fetch the remote data using `fabsim localhost fetch_results`, and investigate the output as you see fit. Local results are typically locations in the various `results/` subdirectories.
+
+### Executing an ensemble job on a remote host with replicas
+
+Replicas are jobs that have identical inputs and configurations. Their outputs may be different however, e.g. due to stochastic or non-deterministic aspects of the simulation algorithm. To run each instance of the ensembles with *N* replicated instances, add a `replicas=<N>` to your command. For example, to run a dummy ensemble with 5 replicas each, just use `fabsim <machine name> dummy_ensemble:dummy_test,replicas=5`.
