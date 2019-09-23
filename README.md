@@ -1,5 +1,5 @@
-# FabDummy
-This is a dummy example plugin for FabSim3. It is meant to showcase a minimal implementation for a FabSim3 plugin.
+# FabChemShell
+This is a ChemShell plugin for FabSim3.
 
 ## Installation
 Simply type `fabsim localhost install_plugin:FabDummy` anywhere inside your FabSim3 install directory.
