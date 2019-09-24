@@ -2,7 +2,7 @@
 This is a ChemShell plugin for FabSim3.
 
 ## Installation
-Simply type `fabsim localhost install_plugin:FabChemShell` anywhere inside your FabSim3 install directory.
+Simply type `fab localhost install_plugin:FabChemShell` anywhere inside your FabSim3 install directory.
 
 ## Testing
 1. To run a dummy job, type `fabsim localhost dummy:dummy_test`.
